@@ -1,9 +1,9 @@
 #define STACKSIZE 100
 
-int stack[STACKSIZE];
+static int stack[STACKSIZE];
 // top of stack
-int tos;
-
+static int tos;
+// 허용된 연산에 의해 메인 접근
 void push(int d)
 {
 	stack[tos] = d;
